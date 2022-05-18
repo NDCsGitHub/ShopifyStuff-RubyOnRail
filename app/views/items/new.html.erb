@@ -1,0 +1,7 @@
+<h1>Create a Item</h1>
+<%= form_with model: @item do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.number_field :quantity, placeholder:"amount" %>
+  <%= form.text_field :description, placeholder: "description" %>
+  <%= form.submit %>
+<% end %>
