@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_18_033437) do
+ActiveRecord::Schema.define(version: 2022_05_19_014401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "inventories", force: :cascade do |t|
+    t.string "item_name"
+    t.integer "item_quantity"
+    t.string "item_description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
@@ -22,6 +29,9 @@ ActiveRecord::Schema.define(version: 2022_05_18_033437) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.datetime "deleted_at"
+    t.string "deleted_comment"
+    t.index ["deleted_at"], name: "index_items_on_deleted_at"
   end
 
 end
