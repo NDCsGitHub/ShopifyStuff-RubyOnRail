@@ -1,12 +1,15 @@
 class ItemsController < ApplicationController
+
+  before_action :current_item_with_deleted, only: [:show, :restore]
+  before_action :current_item, only: [:edit, :update, :delete, :destroy]
+
+
   def index
     @items=Item.without_deleted
     @deleted_items=Item.only_deleted
   end
 
-
   def show
-    @item=Item.with_deleted.find(params[:id])
   end
 
   def new
@@ -19,27 +22,27 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    @item=Item.find(params[:id])
   end
 
   def update
-    @item=Item.find(params[:id])
     @item.update(item_params)
     redirect_to item_path(@item)
   end
 
   def delete
-    @item=Item.find(params[:id])
   end
 
-
   def destroy
-    @item=Item.find(params[:id])
     @item.update(deleted_item_params)
     @item.destroy
     redirect_to items_path
   end
 
+  def restore
+    @item.restore
+    @item.deleted_comment = ''
+    redirect_to items_path
+  end
 
 
 
@@ -50,6 +53,14 @@ class ItemsController < ApplicationController
 
   def deleted_item_params
     params.permit(:deleted_comment)
-
   end
+
+  def current_item_with_deleted
+    @item=Item.with_deleted.find(params[:id])
+  end
+
+  def current_item
+    @item=Item.find(params[:id])
+  end
+
 end

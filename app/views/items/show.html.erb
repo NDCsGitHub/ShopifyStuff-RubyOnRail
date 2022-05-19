@@ -4,5 +4,8 @@
     <li> <%= @item.name %> </li>
     <li> <%= @item.quantity %> </li>
     <li> <%= @item.description %> </li>
+    <% if @item.deleted? %>
+        <li> <%= @item.deleted_comment %> </li>
+    <% end %>
 </ul>
 
