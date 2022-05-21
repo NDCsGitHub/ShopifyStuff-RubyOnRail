@@ -15,7 +15,7 @@ please visit this repository for front end code
 Front-End: https://github.com/NDCsGitHub/ShopifyChallenge-FrontEnd <br>
 Back-End: https://github.com/NDCsGitHub/ShopifyChallenge-Backend
 
-This app has been uploaded to replit, to run the replit, simple open below 2 link and click on run for both replits and you'll be able to use the application in the front end replit
+This app has been uploaded to replit, to run the replit, simple open below 2 links and click on run for both replits and you'll be able to use the application in the front end replit
 Front-End Replit: https://replit.com/@NDC123/ShopifyChallenge-FrontEnd#.replit <br>
 Back-End Replit: https://replit.com/@NDC123/ShopifyChallenge-Backend#.replit
 
