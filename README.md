@@ -12,7 +12,7 @@ Replit：https://replit.com/@NDC123/ShopifyChallenge-RubyOnRail
 <br>
 React and Express Version:
 
-please visit this repository for front end code
+please visit below repositories for frontend code and backend code <br>
 Front-End: https://github.com/NDCsGitHub/ShopifyChallenge-FrontEnd <br>
 Back-End: https://github.com/NDCsGitHub/ShopifyChallenge-Backend
 
