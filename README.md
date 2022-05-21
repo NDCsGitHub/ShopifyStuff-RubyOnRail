@@ -1,24 +1,24 @@
-# README
+Shopify Challenge - Ruby On Rail Version
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the second version of the challenge I made, Shopify tech stack mainly uses Ruby, as a result I used the remaining time to start learning about ruby and made a server side application for the challegne. The applications currently doesnt work on Replit due to issues with permission and version issues on replit. Also tried using docker, unfortunately, replit doesn't have support for docker as well.
 
-Things you may want to cover:
+To run this application, you have to clone, and if you have docker installed in your computer, run below command in the terminal of the root folder of the application.
 
-* Ruby version
+docker-compose up --build
+Github: https://github.com/NDCsGitHub/ShopifyStuff-RubyOnRail <br>
+Replit：https://replit.com/@NDC123/ShopifyChallenge-RubyOnRail
 
-* System dependencies
 
-* Configuration
+React and Express Version:
 
-* Database creation
+please visit this repository for front end code
+Front-End: https://github.com/NDCsGitHub/ShopifyChallenge-FrontEnd <br>
+Back-End: https://github.com/NDCsGitHub/ShopifyChallenge-Backend
 
-* Database initialization
+This app has been uploaded to replit, to run the replit, simple open below 2 link and click on run for both replits and you'll be able to use the application in the front end replit
+Front-End Replit: https://replit.com/@NDC123/ShopifyChallenge-FrontEnd#.replit <br>
+Back-End Replit: https://replit.com/@NDC123/ShopifyChallenge-Backend#.replit
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
