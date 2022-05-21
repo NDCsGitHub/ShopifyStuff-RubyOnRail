@@ -4,7 +4,7 @@ This is the second version of the challenge I made, Shopify tech stack mainly us
 
 To run this application, you have to clone, and if you have docker installed in your computer, run below command in the terminal of the root folder of the application.
 
-docker-compose up --build
+docker-compose up --build <br>
 Github: https://github.com/NDCsGitHub/ShopifyStuff-RubyOnRail <br>
 Replit：https://replit.com/@NDC123/ShopifyChallenge-RubyOnRail
 
